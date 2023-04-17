@@ -1,15 +1,25 @@
-import { Routes, Route } from "react-router-dom";
-import './App.css';
-import { Menu } from "./components/menu";
+import { BrowserRouter } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+// routes
+import Router from './routes';
+// theme
+import ThemeProvider from './theme';
+// components
+import { StyledChart } from './components/chart';
+import ScrollToTop from './components/scroll-to-top';
 
-function App() {
+// ----------------------------------------------------------------------
+
+export default function App() {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={< Menu/>}/>
-      </Routes>
-    </div>
+    <HelmetProvider>
+      <BrowserRouter>
+        <ThemeProvider>
+          <ScrollToTop />
+          <StyledChart />
+          <Router />
+        </ThemeProvider>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }
-
-export default App;
