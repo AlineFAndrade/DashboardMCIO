@@ -1,7 +1,8 @@
 package br.com.taking.DashboarMCIO.service;
 
 import java.util.List;
-import br.com.taking.Alunas
+
+import br.com.taking.DashboarMCIO.model.Alunas;
 
 
 

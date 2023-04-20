@@ -14,12 +14,12 @@ public class AssociadasImpl implements AssociadasService {
 	private AssociadasRepository repository;
 	
 	@Override
-	public Associadas incluir(Associadas associadas {
+	public Associadas incluir(Associadas associadas) {
 		
 		//TODO: verificacao de unicidade de CPF
 		String cpf = associadas.getCpf();
 		
-		Associadas associadasomMesmoCPF = repository.findByCpf(cpf);
+		Associadas associadasComMesmoCPF = repository.findByCpf(cpf);
 		
 		if(associadasComMesmoCPF == null) {
 			return repository.save(associadas);	

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import br.com.taking.DashboarMCIO.model.Associadas;
+import br.com.taking.DashboarMCIO.service.AssociadasService;
 
 @CrossOrigin
 @RestController
