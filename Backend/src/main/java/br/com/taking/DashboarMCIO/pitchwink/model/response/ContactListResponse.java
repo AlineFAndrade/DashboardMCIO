@@ -4,9 +4,9 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-@JsonIgnoreProperties(ignoreUnknown=true)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ContactListResponse {
-	
+
 	private List<ContactDetailResponse> contactsdetails;
 
 	public ContactListResponse() {
@@ -26,7 +26,5 @@ public class ContactListResponse {
 	public void setContactsdetails(List<ContactDetailResponse> contactsdetails) {
 		this.contactsdetails = contactsdetails;
 	}
-
-	
 
 }

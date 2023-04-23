@@ -16,29 +16,30 @@ import br.com.taking.DashboarMCIO.service.AssociadasService;
 @CrossOrigin
 @RestController
 public class AssociadasController {
-	
+
 	@Autowired
 	private AssociadasService service;
+
 	@RequestMapping(value = "/associadas", method = RequestMethod.POST)
-	public ResponseEntity<Object> Post(@RequestBody Associadas associadas){
-		
+	public ResponseEntity<Object> Post(@RequestBody Associadas associadas) {
+
 		Associadas associadasIncluido = service.incluir(associadas);
-		
-		if(associadasIncluido != null) {
+
+		if (associadasIncluido != null) {
 			return new ResponseEntity<Object>(associadasIncluido, HttpStatus.OK);
 		} else {
 			return new ResponseEntity<Object>("CPF ja cadastrado!", HttpStatus.BAD_REQUEST);
 		}
 
 	}
+
 	@RequestMapping(value = "/associadas", method = RequestMethod.GET)
-	public ResponseEntity<List<Associadas>> GetAll(){
-		
+	public ResponseEntity<List<Associadas>> GetAll() {
+
 		List<Associadas> resultado = service.obterTodos();
-		
+
 		return new ResponseEntity<List<Associadas>>(resultado, HttpStatus.OK);
-		
+
 	}
-	
-	
+
 }

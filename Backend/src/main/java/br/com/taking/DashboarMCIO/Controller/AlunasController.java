@@ -13,34 +13,33 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.taking.DashboarMCIO.model.Alunas;
 import br.com.taking.DashboarMCIO.service.AlunasService;
 
-
 @CrossOrigin
 @RestController
 public class AlunasController {
-	
+
 	@Autowired
 	private AlunasService service;
-	
+
 	@RequestMapping(value = "/alunas", method = RequestMethod.POST)
-	public ResponseEntity<Object> Post(@RequestBody Alunas alunas){
-		
+	public ResponseEntity<Object> Post(@RequestBody Alunas alunas) {
+
 		Alunas alunasIncluido = service.incluir(alunas);
-		
-		if(alunasIncluido != null) {
+
+		if (alunasIncluido != null) {
 			return new ResponseEntity<Object>(alunasIncluido, HttpStatus.OK);
 		} else {
 			return new ResponseEntity<Object>("CPF ja cadastrado!", HttpStatus.BAD_REQUEST);
 		}
 
 	}
-	
+
 	@RequestMapping(value = "/alunas", method = RequestMethod.GET)
-	public ResponseEntity<List<Alunas>> GetAll(){
-		
+	public ResponseEntity<List<Alunas>> GetAll() {
+
 		List<Alunas> resultado = service.obterTodos();
-		
+
 		return new ResponseEntity<List<Alunas>>(resultado, HttpStatus.OK);
-		
+
 	}
 
 }

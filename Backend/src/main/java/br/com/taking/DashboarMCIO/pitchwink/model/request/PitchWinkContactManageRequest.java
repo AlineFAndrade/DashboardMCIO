@@ -1,13 +1,13 @@
 package br.com.taking.DashboarMCIO.pitchwink.model.request;
 
 public class PitchWinkContactManageRequest {
-	
+
 	private String credential;
 	private String token;
 	private String function;
 	private String usercodegroup;
 	private String delete;
-	
+
 	public PitchWinkContactManageRequest(String credential, String token, String function, String usercodegroup,
 			String delete) {
 		super();
@@ -62,6 +62,5 @@ public class PitchWinkContactManageRequest {
 	public void setDelete(String delete) {
 		this.delete = delete;
 	}
-	
 
 }

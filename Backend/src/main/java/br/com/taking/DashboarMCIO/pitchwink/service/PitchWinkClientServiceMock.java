@@ -10,7 +10,7 @@ import br.com.taking.DashboarMCIO.pitchwink.model.Aluna;
 import br.com.taking.DashboarMCIO.pitchwink.model.Associada;
 
 @Service
-public class PitchWinkClientServiceMock implements PitchWinkClientService{
+public class PitchWinkClientServiceMock implements PitchWinkClientService {
 
 	public List<Aluna> listAlunas() throws JsonProcessingException {
 		// TODO Auto-generated method stub
@@ -24,12 +24,12 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService{
 
 	public void insertUpdateAluna(Aluna aluna) throws JsonProcessingException {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	public void insertUpdateAssociada(Associada associada) throws JsonProcessingException {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

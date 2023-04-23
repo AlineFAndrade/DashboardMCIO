@@ -1,32 +1,32 @@
 package br.com.taking.DashboarMCIO.model;
 
 public class Associadas {
-	
+
 	private int id;
 
 	private String nome;
 
 	private String dataNasc;
-	
-	private String sexo;		
-	
-	private String cpf;		
-	
-	private String celular;		
 
-	private String email;	
+	private String sexo;
+
+	private String cpf;
+
+	private String celular;
+
+	private String email;
 
 	private String endereco;
-	
-	private String numero;		
-	
-	private String complemento;		
 
-	private String bairro;		
+	private String numero;
 
-	private String cep;		
+	private String complemento;
 
-	private String cidade;		
+	private String bairro;
+
+	private String cep;
+
+	private String cidade;
 
 	private String estado;
 
@@ -114,7 +114,7 @@ public class Associadas {
 
 	public String getBairro() {
 		return bairro;
-	}	
+	}
 
 	public String getCep() {
 		return cep;
@@ -150,6 +150,6 @@ public class Associadas {
 
 	public void setPais(String pais) {
 		this.pais = pais;
-	}		
+	}
 
 }

@@ -6,7 +6,6 @@ import br.com.taking.DashboarMCIO.model.Associadas;
 
 public interface AssociadasRepository extends JpaRepository<Associadas, Integer> {
 
-			Associadas findByCpf(String cpf);
-
+	Associadas findByCpf(String cpf);
 
 }
