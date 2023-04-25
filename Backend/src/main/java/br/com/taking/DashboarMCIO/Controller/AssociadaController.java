@@ -10,20 +10,20 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import br.com.taking.DashboarMCIO.model.Associadas;
-import br.com.taking.DashboarMCIO.service.AssociadasService;
+import br.com.taking.DashboarMCIO.pitchwink.model.Associada;
+import br.com.taking.DashboarMCIO.service.AssociadaService;
 
 @CrossOrigin
 @RestController
-public class AssociadasController {
+public class AssociadaController {
 
 	@Autowired
-	private AssociadasService service;
+	private AssociadaService service;
 
 	@RequestMapping(value = "/associadas", method = RequestMethod.POST)
-	public ResponseEntity<Object> Post(@RequestBody Associadas associadas) {
+	public ResponseEntity<Object> Post(@RequestBody Associada associada) {
 
-		Associadas associadasIncluido = service.incluir(associadas);
+		Associada associadasIncluido = service.incluir(associada);
 
 		if (associadasIncluido != null) {
 			return new ResponseEntity<Object>(associadasIncluido, HttpStatus.OK);
@@ -34,11 +34,11 @@ public class AssociadasController {
 	}
 
 	@RequestMapping(value = "/associadas", method = RequestMethod.GET)
-	public ResponseEntity<List<Associadas>> GetAll() {
+	public ResponseEntity<List<Associada>> GetAll() {
 
-		List<Associadas> resultado = service.obterTodos();
+		List<Associada> resultado = service.obterTodos();
 
-		return new ResponseEntity<List<Associadas>>(resultado, HttpStatus.OK);
+		return new ResponseEntity<List<Associada>>(resultado, HttpStatus.OK);
 
 	}
 

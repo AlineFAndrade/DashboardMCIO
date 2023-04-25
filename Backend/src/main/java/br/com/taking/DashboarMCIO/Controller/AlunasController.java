@@ -10,20 +10,21 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import br.com.taking.DashboarMCIO.model.Alunas;
-import br.com.taking.DashboarMCIO.service.AlunasService;
+
+import br.com.taking.DashboarMCIO.pitchwink.model.Aluna;
+import br.com.taking.DashboarMCIO.service.AlunaService;
 
 @CrossOrigin
 @RestController
 public class AlunasController {
 
 	@Autowired
-	private AlunasService service;
+	private AlunaService service;
 
 	@RequestMapping(value = "/alunas", method = RequestMethod.POST)
-	public ResponseEntity<Object> Post(@RequestBody Alunas alunas) {
+	public ResponseEntity<Object> Post(@RequestBody Aluna alunas) {
 
-		Alunas alunasIncluido = service.incluir(alunas);
+		Aluna alunasIncluido = service.incluir(alunas);
 
 		if (alunasIncluido != null) {
 			return new ResponseEntity<Object>(alunasIncluido, HttpStatus.OK);
@@ -34,11 +35,11 @@ public class AlunasController {
 	}
 
 	@RequestMapping(value = "/alunas", method = RequestMethod.GET)
-	public ResponseEntity<List<Alunas>> GetAll() {
+	public ResponseEntity<List<Aluna>> GetAll() {
 
-		List<Alunas> resultado = service.obterTodos();
+		List<Aluna> resultado = service.obterTodos();
 
-		return new ResponseEntity<List<Alunas>>(resultado, HttpStatus.OK);
+		return new ResponseEntity<List<Aluna>>(resultado, HttpStatus.OK);
 
 	}
 
