@@ -8,7 +8,8 @@ import UserPage from './pages/UserPage';
 import LoginPage from './pages/LoginPage';
 import Page404 from './pages/Page404';
 import ProductsPage from './pages/ProductsPage';
-import DashboardAppPage from './pages/DashboardAppPage';
+import DashboardAppPageAlunas from './pages/DashboardAppPageAlunas';
+import DashboardAppPageAssociadas from './pages/DashboardAppPageAssociadas';
 
 // ----------------------------------------------------------------------
 
@@ -19,7 +20,8 @@ export default function Router() {
       element: <DashboardLayout />,
       children: [
         { element: <Navigate to="/dashboard/app" />, index: true },
-        { path: 'app', element: <DashboardAppPage /> },
+        { path: 'alunas', element: <DashboardAppPageAlunas /> },
+        { path: 'associadas', element: <DashboardAppPageAssociadas /> },
         { path: 'user', element: <UserPage /> },
         { path: 'products', element: <ProductsPage /> },
         { path: 'blog', element: <BlogPage /> },
