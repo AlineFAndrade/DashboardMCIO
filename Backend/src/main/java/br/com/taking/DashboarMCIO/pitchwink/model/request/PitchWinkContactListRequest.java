@@ -1,12 +1,12 @@
 package br.com.taking.DashboarMCIO.pitchwink.model.request;
 
 public class PitchWinkContactListRequest {
-	
+
 	private String credential;
 	private String token;
 	private String function;
 	private String usercodegroup;
-	
+
 	public PitchWinkContactListRequest() {
 		super();
 		// TODO Auto-generated constructor stub

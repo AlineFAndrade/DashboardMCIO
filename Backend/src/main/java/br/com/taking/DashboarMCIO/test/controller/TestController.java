@@ -7,10 +7,8 @@ import br.com.taking.DashboarMCIO.pitchwink.service.PitchWinkClientService;
 
 @RestController
 public class TestController {
-	
+
 	@Autowired
 	private PitchWinkClientService pitchwinkService;
-	
-	
 
 }
