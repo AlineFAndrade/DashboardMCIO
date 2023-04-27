@@ -21,7 +21,108 @@
 
 ### Por geografia - país -estado – cidade.	
 
-## 10. Desenvolvedoras
+##  Conteúdos implementados
+
+### A lógica do projeto foi totalmente implementada em Java com Spring, JavaScript (ES6 +), HTML
+e CSS e empacotada de forma automatizada. Os objetivos de aprendizagem foram:
+
+### Java Web
+
+### React
+
+- **jsx**
+
+- **components**
+
+- **events**
+
+- **lists-and-keys**
+
+- **conditional-rendering**
+
+- **lifting-up-state**
+
+- **hooks**
+
+- **css-modules**
+
+- **routing**
+
+### HTML
+
+- **Uso de HTML semântico**
+
+### CSS
+
+- **Utilização do Sass**
+
+- **Uso de seletores de CSS**
+
+- **Empregar o modelo de caixa (box model): borda, margem, preenchimento**
+
+- **Uso de flexbox en CSS**
+
+- **Uso de CSS Grid Layout**
+
+- **Uso de media queries**
+
+### JavaScript
+
+- **Uso ES modules**
+
+- **Uso de linter (ESLINT)**
+
+- **Uso de identificadores descritivos (Nomenclatura | Semântica)**
+
+### Git e GitHub
+
+- **Git: Instalação e configuração**
+
+- **Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
+
+- **Git: Integração de mudanças entre ramos (branch, checkout, fetch, merge, reset, rebase, tag)**
+
+- **GitHub: Criação de contas e repositórios, configuração de chave SSH**
+
+- **GitHub: Implantação com GitHub Pages**
+
+- **GitHub: Colaboração pelo Github (branches | forks | pull requests | code review | tags)**
+
+- **GitHub: Organização pelo Github (projects | issues | labels | milestones | releases)**
+
+### HTTP
+
+- **Solicitações o requisições (request) e respostas (response).**
+
+- **Cabeçalhos (headers)**
+
+- **Corpo (body)**
+
+- **Verbos HTTP**
+
+- **Codigos de status de HTTP**
+
+- **Encodings e JSON**
+
+- **CORS (Cross-Origin Resource Sharing)**
+
+### UX (User eXperience)
+
+- **Desenhar a aplicação pensando e entendendo o usuário**
+
+- **Criar protótipos para obter feedback e iterar**
+
+- **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
+
+- **Planejar e executar testes de usabilidade**
+
+## Deploy
+
+- **Heroku**
+
+---
+
+## Desenvolvedoras
 
 :large_blue_diamond: Aline 
 
