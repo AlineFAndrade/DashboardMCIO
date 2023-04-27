@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { faker } from '@faker-js/faker';
 // @mui
 import { useTheme } from '@mui/material/styles';
-import { Grid, Container, Typography } from '@mui/material';
+import { Grid, Container, Typography, Input, Button } from '@mui/material';
 // components
 import Iconify from '../components/iconify';
 // sections
@@ -22,17 +22,36 @@ import DataService from '../service/dataService';
 
 // ----------------------------------------------------------------------
 
-export default function DashboardAppPageAssociadas() {
+export default function DashboardAppPageStudent() {
   const theme = useTheme();
 
-  const [associadas, setAssociadas] = useState([])
+  const [student, setStudent] = useState([])
 
   useEffect(() => {
-    DataService.listarTodasAssociadas().then((response) => {
-      setAssociadas(response)
-      console.log(associadas[0].name , "oi")
+    DataService.listAllStudents().then((response) => {
+      setStudent(response)
+      console.log(student[0].name , "oi")
     })
   }, [])
+
+  const [file, setFile] = useState()
+
+  const handleFileChange = (e) => {
+    if (e.target.files) {
+      setFile(e.target.files[0]);
+    }
+  };
+
+  const handleUploadClick = () => {
+    if (!file) {
+      return;
+    }
+    DataService.uploadFile(file)
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+      .catch((err) => console.error(err));
+      console.log(file)
+  };
 
   return (
     <>
@@ -42,27 +61,33 @@ export default function DashboardAppPageAssociadas() {
 
       <Container maxWidth="xl">
         <Typography variant="h4" sx={{ mb: 5 }}>
-        {associadas[0]}
+       Dashboard Alunas
         </Typography>
+
+        <Input type="file" onChange={handleFileChange} />
+        
+        <Button variant="contained" onClick={handleUploadClick}>
+          Upload
+        </Button>
 
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
             <AppWidgetSummary title="Total de Alunas" total={714} icon={'ant-design:android-filled'} />
           </Grid>
 
-          <Grid item xs={12} sm={6} md={3}>
+          {/* <Grid item xs={12} sm={6} md={3}>
             <AppWidgetSummary title="Novas alunas do último mês" total={135} color="info" icon={'ant-design:apple-filled'} />
-          </Grid>
+          </Grid> */}
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Item Orders" total={1723315} color="warning" icon={'ant-design:windows-filled'} />
+            <AppWidgetSummary title="Contratadas por Parceiros" total={1723315} color="warning" icon={'ant-design:windows-filled'} />
           </Grid>
 
-          <Grid item xs={12} sm={6} md={3}>
+          {/* <Grid item xs={12} sm={6} md={3}>
             <AppWidgetSummary title="Bug Reports" total={234} color="error" icon={'ant-design:bug-filled'} />
-          </Grid>
+          </Grid> */}
 
-          <Grid item xs={12} md={6} lg={8}>
+          {/* <Grid item xs={12} md={6} lg={8}>
             <AppWebsiteVisits
               title="Website Visits"
               subheader="(+43%) than last year"
@@ -100,7 +125,7 @@ export default function DashboardAppPageAssociadas() {
                 },
               ]}
             />
-          </Grid>
+          </Grid> */}
 
           <Grid item xs={12} md={6} lg={4}>
             <AppCurrentVisits
@@ -120,7 +145,7 @@ export default function DashboardAppPageAssociadas() {
             />
           </Grid>
 
-          {/* <Grid item xs={12} md={6} lg={8}>
+          <Grid item xs={12} md={6} lg={8}>
             <AppConversionRates
               title="Conversion Rates"
               subheader="(+43%) than last year"
@@ -137,7 +162,7 @@ export default function DashboardAppPageAssociadas() {
                 { label: 'United Kingdom', value: 1380 },
               ]}
             />
-          </Grid> */}
+          </Grid>
 
           <Grid item xs={12} md={6} lg={4}>
             <AppCurrentSubject
