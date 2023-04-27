@@ -19,4 +19,30 @@
 
 ### Filtrar por empresa a qual a pessoa trabalha; 
 
-### Por geografia - país -estado – cidade.	 
+### Por geografia - país -estado – cidade.	
+
+## 10. Desenvolvedoras
+
+:large_blue_diamond: Aline 
+
+<a href="https://www.linkedin.com/in/aline-andrade-/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
+  
+:large_blue_diamond: Ariane
+  
+:large_blue_diamond: Dani
+  
+:large_blue_diamond: Iris  
+  
+:large_blue_diamond: Fabi
+  
+:large_blue_diamond: Jessica
+  
+:large_blue_diamond: Juliana
+  
+:large_blue_diamond: Lisi
+  
+:large_blue_diamond: Luciene
+  
+:large_blue_diamond: Nayara
+  
+
