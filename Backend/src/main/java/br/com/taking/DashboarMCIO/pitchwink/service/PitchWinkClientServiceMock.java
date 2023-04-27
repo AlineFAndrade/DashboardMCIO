@@ -12,35 +12,24 @@ import br.com.taking.DashboarMCIO.pitchwink.model.Associada;
 
 @Service
 public class PitchWinkClientServiceMock implements PitchWinkClientService {
+	
+	List<Aluna> alunas = new ArrayList<>();
+	List<Associada> associadas = new ArrayList<>();
 
 	public List<Aluna> listAlunas() throws JsonProcessingException {
-		
-		List<Aluna> alunas = new ArrayList<>();
-		Aluna aluna1 = new Aluna();
-		aluna1.setName("Aline Mock Aluna");
-		alunas.add(aluna1);
-		
 		return alunas;
 	}
 
 	public List<Associada> listAssociadas() throws JsonProcessingException {
-		
-		List<Associada> associadas = new ArrayList<>();
-		Associada associada1 = new Associada();
-		associada1.setName("Aline Mock Associada");
-		associadas.add(associada1);
-		
 		return associadas;
 	}
 
 	public void insertUpdateAluna(Aluna aluna) throws JsonProcessingException {
-		// TODO Auto-generated method stub
-
+		alunas.add(aluna);
 	}
 
 	public void insertUpdateAssociada(Associada associada) throws JsonProcessingException {
-		// TODO Auto-generated method stub
-
+		associadas.add(associada);
 	}
 
 }

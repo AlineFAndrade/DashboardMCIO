@@ -2,6 +2,9 @@ package br.com.taking.DashboarMCIO;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 public class DashboarMcioApplication {
@@ -10,4 +13,18 @@ public class DashboarMcioApplication {
 		SpringApplication.run(DashboarMcioApplication.class, args);
 	}
 
+	/**
+	 * Copiei daqui
+	 * https://spring.io/guides/gs/rest-service-cors/
+	 * @return
+	 */
+	@Bean
+	public WebMvcConfigurer corsConfigurer() {
+		return new WebMvcConfigurer() {
+			@Override
+			public void addCorsMappings(CorsRegistry registry) {
+				registry.addMapping("/**").allowedOrigins("*");
+			}
+		};
+	}
 }
