@@ -13,7 +13,7 @@
 
 ## Funcionalidade: Dashboard. 
 
-###Visualizar quantidades de alunas e associadas por região/ area que tem mais alunas ;		 
+### Visualizar quantidades de alunas e associadas por região/ area que tem mais alunas ;		 
 
 ### Filtrar por faixa etária/idade; 
 
