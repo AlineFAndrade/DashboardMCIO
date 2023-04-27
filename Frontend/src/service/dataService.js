@@ -26,18 +26,30 @@ const listAllAssociated = async () => {
 https://muffinman.io/blog/uploading-files-using-fetch-multipart-form-data/
 Tirei a ideia daqui 👆
 */
-const uploadFile = async (file) => {
+const uploadFileAssociated = async (file) => {
   const formData = new FormData();
   formData.append('file', file);
-  fetch('http://localhost:8080/associadas', {
+  return fetch('http://localhost:8080/associadas', {
     method: 'POST',
     body: formData
   })
 
 }
+
+const uploadFileStudents = async (file) => {
+  const formData = new FormData();
+  formData.append('file', file);
+  return fetch('http://localhost:8080/alunas', {
+    method: 'POST',
+    body: formData
+  })
+
+}
+
 const DataService = {
   listAllStudents,
   listAllAssociated,
-  uploadFile
+  uploadFileAssociated,
+  uploadFileStudents
 }
 export default DataService

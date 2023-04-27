@@ -134,7 +134,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		associada1.setName("Luiza Marinho");
 		associada1.setXvPais("Brasil");
 		associada1.setXvUf("SP");
-		associada1.setXvSegmento("Diretora de TI");
+		associada1.setXvSegmento("Varejo");
 		associada1.setXvPilarMcio("Diretoria");
 		
 		associadas.add(associada1);
@@ -143,7 +143,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		associada2.setName("Marina Moreira Gusmao");
 		associada2.setXvPais("Brasil");
 		associada2.setXvUf("SP");
-		associada2.setXvSegmento("Head de sistemas");
+		associada2.setXvSegmento("Energia");
 		associada2.setXvPilarMcio("Nao atua como voluntária");
 		
 		associadas.add(associada2);
@@ -152,7 +152,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		associada3.setName("Gabriela Tabosa dos Reis");
 		associada3.setXvPais("Brasil");
 		associada3.setXvUf("SP");
-		associada3.setXvSegmento("Presidente");
+		associada3.setXvSegmento("Seguros");
 		associada3.setXvPilarMcio("Diretoria");
 		
 		associadas.add(associada3);
@@ -161,7 +161,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		associada4.setName("Aline Ramos Ferreira");
 		associada4.setXvPais("Brasil");
 		associada4.setXvUf("RJ");
-		associada4.setXvSegmento("Consultora");
+		associada4.setXvSegmento("Energia");
 		associada4.setXvPilarMcio("Parceria");
 		
 		associadas.add(associada4);
@@ -170,7 +170,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		associada5.setName("Fernanda Cristina de Franca");
 		associada5.setXvPais("Brasil");
 		associada5.setXvUf("SP");
-		associada5.setXvSegmento("Gerente SR");
+		associada5.setXvSegmento("Energia");
 		associada5.setXvPilarMcio("Mentoria e gestao de projetos");
 		
 		associadas.add(associada5);
@@ -179,7 +179,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		associada6.setName("Amanda Vasconcelos");
 		associada6.setXvPais("Brasil");
 		associada6.setXvUf("RJ");
-		associada6.setXvSegmento("CIO Latam");
+		associada6.setXvSegmento("Varejo");
 		associada6.setXvPilarMcio("Diretoria");
 		
 		associadas.add(associada6);
@@ -188,7 +188,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		associada7.setName("Lílian Barreto das Mecedes");
 		associada7.setXvPais("Brasil");
 		associada7.setXvUf("SP");
-		associada7.setXvSegmento("Diretora Associada");
+		associada7.setXvSegmento("Industria Alimentícia");
 		associada7.setXvPilarMcio("Parceria");
 		
 		associadas.add(associada7);
@@ -197,7 +197,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		associada8.setName("Bruna Nogueira da Silva");
 		associada8.setXvPais("Brasil");
 		associada8.setXvUf("SP");
-		associada8.setXvSegmento("Gerente Regional de TI");
+		associada8.setXvSegmento("Industria Alimentícia");
 		associada8.setXvPilarMcio("Mentoria e Gestao de Projetos");
 		
 		associadas.add(associada8);
@@ -206,16 +206,16 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		associada9.setName("Maria das Gracas de Lima Cavalcanti");
 		associada9.setXvPais("Brasil");
 		associada9.setXvUf("SP");
-		associada9.setXvSegmento("Sócia diretora");
+		associada9.setXvSegmento("Industria Alimentícia");
 		associada9.setXvPilarMcio("Diretoria");
 		
 		associadas.add(associada9);
 		
 		Associada associada10 = new Associada();
-		associada10.setName("Paulo de Lacerda");
+		associada10.setName("Paula de Lacerda");
 		associada10.setXvPais("Brasil");
 		associada10.setXvUf("RJ");
-		associada10.setXvSegmento("Diretor de TI");
+		associada10.setXvSegmento("Varejo");
 		associada10.setXvPilarMcio("Mentoria e Gestao de Projetos");
 		
 		associadas.add(associada10);

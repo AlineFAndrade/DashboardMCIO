@@ -38,9 +38,20 @@ public class AssociadaImpl implements AssociadaService {
 
 			for (CSVRecord csvRecord : csvRecords) {
 				Associada associada = new Associada();
-				associada.setName(csvRecord.get(1)); // Coluna B(2) é o Nome
+				//nao tem atributo para carimbo, coluna A(0)
+				associada.setName(csvRecord.get(1)); // Coluna B é o Nome
 				associada.setEmail(csvRecord.get(2)); // Coluna C é o email
+				associada.setMobile(csvRecord.get(3)); //Coluna D  celular
+				associada.setXvPais(csvRecord.get(4)); //Coluna E pais
+				associada.setXvUf(csvRecord.get(5)); //COluna F estado
+				associada.setXvCidade(csvRecord.get(6)); //COluna G cidade
 				associada.setXvAreaAtua(csvRecord.get(7)); // Coluna H é atuacao
+				associada.setXvEspOutraArea(csvRecord.get(8)); //COluna I em caso de "outros"
+				associada.setXvCargoTecnologia(csvRecord.get(9)); //COluna J cargo
+				associada.setXvSegmento(csvRecord.get(10)); //COluna K segmento
+				//nao encontramos atributo para "area de interesse"
+				associada.setXvOutraAssociacao(csvRecord.get(12)); //COluna M se faz volunt em outr ong
+				associada.setXvPilarMcio(csvRecord.get(13)); //Coluna N pilar mcio que atua
 				associadas.add(associada);
 			}
 
@@ -49,7 +60,7 @@ public class AssociadaImpl implements AssociadaService {
 			}
 			
 		} catch (IOException e) {
-			throw new RuntimeException("Deu ruim no arquivo: " + e.getMessage());
+			throw new RuntimeException("Tivemos problemas: " + e.getMessage());
 		}
 	}
 

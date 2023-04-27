@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -21,13 +20,6 @@ public class AssociadaController {
 	@Autowired
 	private AssociadaService service;
 
-	/**
-	 * Copiei tudo daqui 👇
-	 * https://www.bezkoder.com/spring-boot-upload-csv-file/
-	 * 
-	 * @param file Arquivo CSV baseado no modelo
-	 * @return Mensagem com o resultado
-	 */
 	@RequestMapping(value = "/associadas", method = RequestMethod.POST)
 	public ResponseEntity<Object> Post(@RequestParam("file") MultipartFile file) {
 		String message = "";

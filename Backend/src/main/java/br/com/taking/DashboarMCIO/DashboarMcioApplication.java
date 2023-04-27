@@ -13,11 +13,6 @@ public class DashboarMcioApplication {
 		SpringApplication.run(DashboarMcioApplication.class, args);
 	}
 
-	/**
-	 * Copiei daqui
-	 * https://spring.io/guides/gs/rest-service-cors/
-	 * @return
-	 */
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
