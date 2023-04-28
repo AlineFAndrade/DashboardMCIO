@@ -148,12 +148,7 @@ export default function DashboardAppPageStudent() {
           <Grid item xs={12} md={6} lg={4}>
             <AppCurrentVisits
               title="Origem da Inscrição"
-              chartData={[
-                { label: 'America', value: 4344 },
-                { label: 'Asia', value: 5435 },
-                { label: 'Europe', value: 1443 },
-                { label: 'Africa', value: 4443 },
-              ]}
+              chartData={countByGroup(student, "xvOrigeminsc")}
               chartColors={[
                 theme.palette.primary.main,
                 theme.palette.info.main,
