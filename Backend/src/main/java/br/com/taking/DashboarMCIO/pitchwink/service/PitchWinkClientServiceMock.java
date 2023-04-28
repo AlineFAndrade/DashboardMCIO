@@ -41,6 +41,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		aluna1.setXvUfAluna("SP");
 		aluna1.setXvContratadaParceiroMcio("S");
 		aluna1.setXvGrauEscolaridadeAluna("Superior");
+		aluna1.setXvOrigeminsc("Linkedin");
 		
 		alunas.add(aluna1);
 		
@@ -50,6 +51,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		aluna2.setXvUfAluna("MG");
 		aluna2.setXvContratadaParceiroMcio("S");
 		aluna2.setXvGrauEscolaridadeAluna("MBA");
+		aluna2.setXvOrigeminsc("Linkedin");
 		
 		alunas.add(aluna2);
 		
@@ -59,6 +61,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		aluna3.setXvUfAluna("Barcelona");
 		aluna3.setXvContratadaParceiroMcio("N");
 		aluna3.setXvGrauEscolaridadeAluna("Superior");
+		aluna3.setXvOrigeminsc("Outros");
 		
 		alunas.add(aluna3);
 		
@@ -68,6 +71,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		aluna4.setXvUfAluna("Pernambuco");
 		aluna4.setXvContratadaParceiroMcio("S");
 		aluna4.setXvGrauEscolaridadeAluna("Pós Graduacao");
+		aluna4.setXvOrigeminsc("Linkedin");
 		
 		alunas.add(aluna4);
 		
@@ -77,6 +81,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		aluna5.setXvUfAluna("SP");
 		aluna5.setXvContratadaParceiroMcio("N");
 		aluna5.setXvGrauEscolaridadeAluna("Superior");
+		aluna5.setXvOrigeminsc("Facebook");
 		
 		alunas.add(aluna5);
 		
@@ -86,6 +91,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		aluna6.setXvUfAluna("RJ");
 		aluna6.setXvContratadaParceiroMcio("N");
 		aluna6.setXvGrauEscolaridadeAluna("Superior");
+		aluna6.setXvOrigeminsc("Instagram");
 		
 		alunas.add(aluna6);
 		
@@ -95,6 +101,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		aluna7.setXvUfAluna("PR");
 		aluna7.setXvContratadaParceiroMcio("S");
 		aluna7.setXvGrauEscolaridadeAluna("MBA");
+		aluna7.setXvOrigeminsc("Email da Comunidade MCIO Academia");
 		
 		alunas.add(aluna7);
 		
@@ -104,6 +111,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		aluna8.setXvUfAluna("Lima");
 		aluna8.setXvContratadaParceiroMcio("S");
 		aluna8.setXvGrauEscolaridadeAluna("Superior");
+		aluna8.setXvOrigeminsc("Linkedin");
 		
 		alunas.add(aluna8);
 		
@@ -113,6 +121,7 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		aluna9.setXvUfAluna("RN");
 		aluna9.setXvContratadaParceiroMcio("N");
 		aluna9.setXvGrauEscolaridadeAluna("Médio");
+		aluna9.setXvOrigeminsc("Outros");
 		
 		alunas.add(aluna9);
 		
@@ -122,8 +131,11 @@ public class PitchWinkClientServiceMock implements PitchWinkClientService {
 		aluna10.setXvUfAluna("Carolina do Norte");
 		aluna10.setXvContratadaParceiroMcio("S");
 		aluna10.setXvGrauEscolaridadeAluna("Doutorado");
+		aluna10.setXvOrigeminsc("Instagram");
+		
 		
 		alunas.add(aluna10);
+		
 		return alunas;
 	}
 	
