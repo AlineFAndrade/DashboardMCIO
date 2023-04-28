@@ -139,6 +139,8 @@ e CSS e empacotada de forma automatizada. Os objetivos de aprendizagem foram:
 :large_blue_diamond: Jessica
   
 :large_blue_diamond: Juliana
+
+<a href="https://www.linkedin.com/in/juliana-mignac/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
   
 :large_blue_diamond: Lisi
   
