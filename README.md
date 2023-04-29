@@ -23,6 +23,13 @@
 
 ##  Conteúdos implementados
 
+![javaTesteEditado](https://user-images.githubusercontent.com/105310968/235322236-c62d4e94-93f1-4a38-b784-6f575099ac79.png)
+![springVerdeTransp](https://user-images.githubusercontent.com/105310968/235321935-339c43e4-507e-4347-8a11-276a4f9807f6.png)
+![reactNovoEditado](https://user-images.githubusercontent.com/105310968/235321063-2f04a7b2-0d4b-407d-8a2b-758a43615b2f.png)
+
+
+
+
 ### A lógica do projeto foi totalmente implementada em Java com Spring, JavaScript (ES6 +), HTML
 e CSS e empacotada de forma automatizada. Os objetivos de aprendizagem foram:
 
