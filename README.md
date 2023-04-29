@@ -3,25 +3,25 @@
 
 ![47 Sem Título_20230427174058](https://user-images.githubusercontent.com/105310968/234986092-03ae117d-06fa-4e64-a99b-efdb1f809d96.png)
 
-### Esse projeto foi criado como trabalho de conclusão do curso  Full Stack, oferecido pela MCIO em parceira com a empresa de consultoria Taking, com o objetivo de fixar o conteúdo aprendido e demostrar a criação de um projeto real, no qual será utilizado pela associação MCIO para melhor administrar a base de dados de alunas e associadas.
+#### Esse projeto foi criado como trabalho de conclusão do curso  Full Stack, oferecido pela associação MCIO em parceira com a empresa de consultoria Taking, com o objetivo de fixar o conteúdo aprendido e demostrar a criação de um projeto real, no qual será utilizado pela associação MCIO para melhor administrar a base de dados de alunas e associadas.
 
-## Objetivo do projeto: 
+### Objetivo do projeto: 
 
-### Criar tribos/grupos que façam sentido entre os membros, grupos por afinidade; 
+#### Criar tribos/grupos que façam sentido entre os membros, grupos por afinidade; 
 
-### Descobrir afinidades, além da programação afim de propor projetos com interesse em comum. 
+#### Descobrir afinidades, além da programação afim de propor projetos com interesse em comum. 
 
-## Funcionalidade: Dashboard. 
+### Funcionalidade: Dashboard. 
 
-### Visualizar quantidades de alunas e associadas por região/ area que tem mais alunas e associadas;		 
+#### Visualizar quantidades de alunas e associadas por região/ area que tem mais alunas e associadas;		 
 
-### Filtrar por faixa etária/idade; 
+#### Filtrar por faixa etária/idade; 
 
-### Filtrar por empresa a qual a pessoa trabalha; 
+#### Filtrar por empresa a qual a pessoa trabalha; 
 
-### Por geografia - país -estado – cidade.	
+#### Por geografia: país - estado – cidade.	
 
-##  Conteúdos implementados
+###  Conteúdos implementados:
 
 ![javaTesteEditado](https://user-images.githubusercontent.com/105310968/235322236-c62d4e94-93f1-4a38-b784-6f575099ac79.png)
 ![springVerdeTransp](https://user-images.githubusercontent.com/105310968/235321935-339c43e4-507e-4347-8a11-276a4f9807f6.png)
@@ -30,7 +30,7 @@
 
 
 
-### A lógica do projeto foi totalmente implementada em Java com Spring, JavaScript (ES6 +), HTML
+#### A lógica do projeto foi totalmente implementada em Java com Spring, JavaScript (ES6 +), HTML
 e CSS e empacotada de forma automatizada. Os objetivos de aprendizagem foram:
 
 ### Java Web
