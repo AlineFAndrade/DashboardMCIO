@@ -22,12 +22,18 @@
 #### Por geografia: país - estado – cidade.	
 
 ###  Conteúdos implementados:
+<div style="display:inline_block">
+  <img align="center" alt="Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
+  <img align="center" alt="GitHub" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg">
+  <img align="center" alt="Java" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+  <img align="center" alt="Javascript" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+  <img align="center" alt="Material UI" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg">
+  <img align="center" alt="Markdown" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg">
+  <img align="center" alt="NPM" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg">
+  <img align="center" alt="React" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+  <img align="center" alt="Spring" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg">
 
-![javaTesteEditado](https://user-images.githubusercontent.com/105310968/235322236-c62d4e94-93f1-4a38-b784-6f575099ac79.png)
-![springVerdeTransp](https://user-images.githubusercontent.com/105310968/235321935-339c43e4-507e-4347-8a11-276a4f9807f6.png)
-![reactNovoEditado](https://user-images.githubusercontent.com/105310968/235321063-2f04a7b2-0d4b-407d-8a2b-758a43615b2f.png)
-
-
+</div>
 
 
 #### A lógica do projeto foi totalmente implementada em Java com Spring, JavaScript (ES6 +), HTML
@@ -129,6 +135,14 @@ e CSS e empacotada de forma automatizada. Os objetivos de aprendizagem foram:
 
 ---
 
+### Para "testar o projeto":
+#### Faça o clone do projeto usando endereço HTTPS ou SSH, copiando o link do repositório e colando no seu terminal (git clone link do Repositorio).
+#### Front e Back foram criados em IDEs diferentes: VisualStudioCode para o Front e Eclipse para o Back.
+#### Para rodar o back end, siga as instruções do Eclipse para fazer o import de arquivo Maven existente (usando o arquivo clonado).
+#### Clique para instalar na barra de ferramentas superior e inicie o processo a partir do Arquivo DashboarMcioApplication.
+#### No front, entre no repositório pelo terminal ou VSCode e instale (npm install).
+#### Inicie o projeto front (npm start).
+
 ## Desenvolvedoras:
 
 :large_blue_diamond: Aline 
@@ -159,5 +173,9 @@ e CSS e empacotada de forma automatizada. Os objetivos de aprendizagem foram:
 <a href="https://www.linkedin.com/in/lucienerodriguesdasilva/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
   
 :large_blue_diamond: Nayara
+
+
+
+
   
 
