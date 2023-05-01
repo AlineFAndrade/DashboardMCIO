@@ -8,8 +8,8 @@ import UserPage from './pages/UserPage';
 import LoginPage from './pages/LoginPage';
 import Page404 from './pages/Page404';
 import ProductsPage from './pages/ProductsPage';
-import DashboardAppPageAlunas from './pages/DashboardAppPageAlunas';
-import DashboardAppPageAssociadas from './pages/DashboardAppPageAssociadas';
+import DashboardAppPageStudent from './pages/DashboardAppPageStudent';
+import DashboardAppPageAssociated from './pages/DashboardAppPageAssociated';
 
 // ----------------------------------------------------------------------
 
@@ -19,9 +19,9 @@ export default function Router() {
       path: '/dashboard',
       element: <DashboardLayout />,
       children: [
-        { element: <Navigate to="/dashboard/app" />, index: true },
-        { path: 'alunas', element: <DashboardAppPageAlunas /> },
-        { path: 'associadas', element: <DashboardAppPageAssociadas /> },
+        { element: <Navigate to="/dashboard/alunas" />, index: true },
+        { path: 'alunas', element: <DashboardAppPageStudent /> },
+        { path: 'associadas', element: <DashboardAppPageAssociated /> },
         { path: 'user', element: <UserPage /> },
         { path: 'products', element: <ProductsPage /> },
         { path: 'blog', element: <BlogPage /> },
@@ -34,7 +34,7 @@ export default function Router() {
     {
       element: <SimpleLayout />,
       children: [
-        { element: <Navigate to="/dashboard/app" />, index: true },
+        { element: <Navigate to="/dashboard/alunas" />, index: true },
         { path: '404', element: <Page404 /> },
         { path: '*', element: <Navigate to="/404" /> },
       ],
