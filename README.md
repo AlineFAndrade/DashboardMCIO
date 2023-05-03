@@ -129,10 +129,6 @@ e CSS e empacotada de forma automatizada. Os objetivos de aprendizagem foram:
 
 - **Planejar e executar testes de usabilidade**
 
-## Deploy
-
-- **Heroku**
-
 ---
 
 ### Para "testar o projeto":
