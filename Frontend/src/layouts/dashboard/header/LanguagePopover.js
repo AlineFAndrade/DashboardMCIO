@@ -1,9 +1,6 @@
 import { useState } from 'react';
-// @mui
 import { alpha } from '@mui/material/styles';
 import { Box, MenuItem, Stack, IconButton, Popover } from '@mui/material';
-
-// ----------------------------------------------------------------------
 
 const LANGS = [
   {
@@ -22,8 +19,6 @@ const LANGS = [
     icon: '/assets/icons/ic_flag_fr.svg',
   },
 ];
-
-// ----------------------------------------------------------------------
 
 export default function LanguagePopover() {
   const [open, setOpen] = useState(null);

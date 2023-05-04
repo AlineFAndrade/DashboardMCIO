@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-// form
 import { useForm, Controller } from 'react-hook-form';
-// @mui
 import {
   Card,
   Stack,
@@ -14,10 +12,7 @@ import {
   CardHeader,
   FormControlLabel,
 } from '@mui/material';
-// components
 import Iconify from '../../../components/iconify';
-
-// ----------------------------------------------------------------------
 
 AppTasks.propTypes = {
   title: PropTypes.string,
@@ -59,8 +54,6 @@ export default function AppTasks({ title, subheader, list, ...other }) {
     </Card>
   );
 }
-
-// ----------------------------------------------------------------------
 
 TaskItem.propTypes = {
   checked: PropTypes.bool,

@@ -1,13 +1,8 @@
-// @mui
 import PropTypes from 'prop-types';
 import { Box, Stack, Link, Card, Button, Divider, Typography, CardHeader } from '@mui/material';
-// utils
 import { fToNow } from '../../../utils/formatTime';
-// components
 import Iconify from '../../../components/iconify';
 import Scrollbar from '../../../components/scrollbar';
-
-// ----------------------------------------------------------------------
 
 AppNewsUpdate.propTypes = {
   title: PropTypes.string,
@@ -38,8 +33,6 @@ export default function AppNewsUpdate({ title, subheader, list, ...other }) {
     </Card>
   );
 }
-
-// ----------------------------------------------------------------------
 
 NewsItem.propTypes = {
   news: PropTypes.shape({

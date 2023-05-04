@@ -1,9 +1,6 @@
 import { Helmet } from 'react-helmet-async';
-// @mui
 import { useTheme } from '@mui/material/styles';
-import { Grid, Container, Typography, Input, Button, Snackbar, SnackbarContent, Alert } from '@mui/material';
-// components
-// sections
+import { Grid, Container, Typography, Input, Button, Snackbar, Alert } from '@mui/material';
 import {
   AppCurrentVisits,
   AppWidgetSummary,
@@ -11,8 +8,6 @@ import {
 } from '../sections/@dashboard/app';
 import { useEffect, useState } from 'react';
 import DataService from '../service/dataService';
-
-// ----------------------------------------------------------------------
 
 export default function DashboardAppPageAssociated() {
   const theme = useTheme();

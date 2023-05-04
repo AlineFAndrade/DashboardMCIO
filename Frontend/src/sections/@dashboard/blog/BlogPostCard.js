@@ -1,15 +1,10 @@
 import PropTypes from 'prop-types';
-// @mui
 import { alpha, styled } from '@mui/material/styles';
 import { Box, Link, Card, Grid, Avatar, Typography, CardContent } from '@mui/material';
-// utils
 import { fDate } from '../../../utils/formatTime';
 import { fShortenNumber } from '../../../utils/formatNumber';
-//
 import SvgColor from '../../../components/svg-color';
 import Iconify from '../../../components/iconify';
-
-// ----------------------------------------------------------------------
 
 const StyledCardMedia = styled('div')({
   position: 'relative',
@@ -48,8 +43,6 @@ const StyledCover = styled('img')({
   objectFit: 'cover',
   position: 'absolute',
 });
-
-// ----------------------------------------------------------------------
 
 BlogPostCard.propTypes = {
   post: PropTypes.object.isRequired,

@@ -1,18 +1,11 @@
 import PropTypes from 'prop-types';
-
-// @mui
 import { styled } from '@mui/material/styles';
 import { Autocomplete, InputAdornment, Popper, TextField } from '@mui/material';
-// components
 import Iconify from '../../../components/iconify';
-
-// ----------------------------------------------------------------------
 
 const StyledPopper = styled((props) => <Popper placement="bottom-start" {...props} />)({
   width: '280px !important',
 });
-
-// ----------------------------------------------------------------------
 
 BlogPostsSearch.propTypes = {
   posts: PropTypes.array.isRequired,

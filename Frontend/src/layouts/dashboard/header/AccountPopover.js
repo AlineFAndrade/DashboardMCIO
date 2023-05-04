@@ -1,11 +1,7 @@
 import { useState } from 'react';
-// @mui
 import { alpha } from '@mui/material/styles';
 import { Box, Divider, Typography, Stack, MenuItem, Avatar, IconButton, Popover } from '@mui/material';
-// mocks_
 import account from '../../../_mock/account';
-
-// ----------------------------------------------------------------------
 
 const MENU_OPTIONS = [
   {
@@ -21,8 +17,6 @@ const MENU_OPTIONS = [
     icon: 'eva:settings-2-fill',
   },
 ];
-
-// ----------------------------------------------------------------------
 
 export default function AccountPopover() {
   const [open, setOpen] = useState(null);

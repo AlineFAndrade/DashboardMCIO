@@ -1,18 +1,12 @@
 import PropTypes from 'prop-types';
-// @mui
 import { styled } from '@mui/material/styles';
 import { Box, Stack, AppBar, Toolbar, IconButton } from '@mui/material';
-// utils
 import { bgBlur } from '../../../utils/cssStyles';
-// components
 import Iconify from '../../../components/iconify';
-//
 import Searchbar from './Searchbar';
 import AccountPopover from './AccountPopover';
 import LanguagePopover from './LanguagePopover';
 import NotificationsPopover from './NotificationsPopover';
-
-// ----------------------------------------------------------------------
 
 const NAV_WIDTH = 280;
 
@@ -35,8 +29,6 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
     padding: theme.spacing(0, 5),
   },
 }));
-
-// ----------------------------------------------------------------------
 
 Header.propTypes = {
   onOpenNav: PropTypes.func,

@@ -1,12 +1,8 @@
 import PropTypes from 'prop-types';
 import ReactApexChart from 'react-apexcharts';
-// @mui
 import { styled } from '@mui/material/styles';
 import { Card, CardHeader } from '@mui/material';
-// components
 import { useChart } from '../../../components/chart';
-
-// ----------------------------------------------------------------------
 
 const CHART_HEIGHT = 392;
 
@@ -29,8 +25,6 @@ const StyledChartWrapper = styled('div')(({ theme }) => ({
     top: `calc(${CHART_HEIGHT - LEGEND_HEIGHT}px) !important`,
   },
 }));
-
-// ----------------------------------------------------------------------
 
 AppCurrentSubject.propTypes = {
   title: PropTypes.string,

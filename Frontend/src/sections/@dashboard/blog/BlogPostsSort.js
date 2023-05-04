@@ -1,8 +1,5 @@
 import PropTypes from 'prop-types';
-// @mui
 import { MenuItem, TextField } from '@mui/material';
-
-// ----------------------------------------------------------------------
 
 BlogPostsSort.propTypes = {
   options: PropTypes.array,

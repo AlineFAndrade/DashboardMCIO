@@ -1,11 +1,7 @@
-// @mui
 import PropTypes from 'prop-types';
 import { Card, Typography, CardHeader, CardContent } from '@mui/material';
 import { Timeline, TimelineDot, TimelineItem, TimelineContent, TimelineSeparator, TimelineConnector } from '@mui/lab';
-// utils
 import { fDateTime } from '../../../utils/formatTime';
-
-// ----------------------------------------------------------------------
 
 AppOrderTimeline.propTypes = {
   title: PropTypes.string,
@@ -34,8 +30,6 @@ export default function AppOrderTimeline({ title, subheader, list, ...other }) {
     </Card>
   );
 }
-
-// ----------------------------------------------------------------------
 
 OrderItem.propTypes = {
   isLast: PropTypes.bool,

@@ -1,11 +1,7 @@
 import PropTypes from 'prop-types';
 import ReactApexChart from 'react-apexcharts';
-// @mui
 import { Card, CardHeader, Box } from '@mui/material';
-// components
 import { useChart } from '../../../components/chart';
-
-// ----------------------------------------------------------------------
 
 AppWebsiteVisits.propTypes = {
   title: PropTypes.string,
