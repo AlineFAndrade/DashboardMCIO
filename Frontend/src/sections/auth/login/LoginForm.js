@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 // @mui
-import { Link, Stack, IconButton, InputAdornment, TextField, Checkbox, Typography, Box, Card } from '@mui/material';
+import { Link, Stack, IconButton, InputAdornment, TextField, Checkbox, Typography, Card, Divider, Button, Grid, Paper } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
 // components
 import Iconify from '../../../components/iconify';
@@ -20,45 +20,118 @@ export default function LoginForm() {
  
   return (
     <>
+  <Grid container justify="center" sx={{ boxShadow: '0px 0px 10px 2px rgba(0,0,0,0.25)', justifyContent: 'center', alignItems: 'center',bgcolor: '#EAEAEA'}}>
+  <Grid item xs={12} sm={12} md={6}>
+  <div sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <Typography variant="h4" noWrap sx={{ textAlign: 'center', fontFamily: 'Inter, sans-serif' }}>
+      Acesso ao Sistema<br/>
+    </Typography>
+  </div>
+      <Divider/><br/>
+               <TextField
+              variant="outlined"
+              margin="normal"
+              required
+              fullWidth
+              id="username"
+              label="Usuário"
+              name="username"
+              autoComplete="username"
+              autoFocus
+              sx={{ bgcolor: '#FFFFFF' }}
+            /><br/>
+            <TextField name="password" label="Senha"
+              type={showPassword ? 'text' : 'password'}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton onClick={() => setShowPassword(!showPassword)} edge="end">
+                      <Iconify icon={showPassword ? 'eva:eye-fill' : 'eva:eye-off-fill'} />
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              }}
+              sx={{ width: '100%', mx: 'auto', my: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: '#FFFFFF' }}/>
+        <br/>
+        <Button type="submit" fullWidth variant="contained" onClick={handleClick} sx={{ bgcolor: '#666666', color: '#FFFFFF' }}>
+        
+          Enviar
+          
+        </Button>
+        
 
-<Card sx={{ aspectRatio: '5/5', boxShadow: '0px 0px 10px 2px rgba(0,0,0,0.25)', justifyContent: 'center', alignItems: 'center'}}> 
-      <Stack spacing={3}>
-      <div sx={{justifyContent: 'center', alignItems: 'center'}}>
-      <Typography variant="h3" sx={{ textAlign: 'center', color: '#002F9C'}}>
-             <p><p> Acesso ao sistema</p></p>
-      </Typography> </div>
 
-        <TextField name="email" label="Email" />
+           
+
+             <Stack direction="row" alignItems="center" justifyContent="center" sx={{ my: 2, textAlign: 'center' }}>
+              <Link variant="subtitle2" underline="hover" sx={{ color: '#4D4D4D' }}>
+                Esqueceu a senha? Clique aqui.
+                <br />
+                Cadastre-se
+              </Link>
+            </Stack>  
+          
+      </Grid>
+    </Grid>
 
 
-        <TextField
-          name="password"
-          label="Senha"
-          type={showPassword ? 'text' : 'password'}
-          InputProps={{
-            endAdornment: (
-              <InputAdornment position="end">
-                <IconButton onClick={() => setShowPassword(!showPassword)} edge="end">
-                  <Iconify icon={showPassword ? 'eva:eye-fill' : 'eva:eye-off-fill'} />
-                </IconButton>
-              </InputAdornment>
-            ),
-          }}
-        />
-      </Stack>
+     {/* <Card sx={{ aspectRatio: '4/4', boxShadow: '0px 0px 10px 2px rgba(0,0,0,0.25)', justifyContent: 'center', alignItems: 'center',bgcolor: '#EAEAEA'}}>
+  <Stack spacing={3}>
+    <div sx={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+      <Typography variant="h3" sx={{ textAlign: 'center'}}>
+        <br></br>Acesso ao sistema
+      </Typography>
+    </div>
+    <Divider/>
+     <TextField name="email" label="Usuário" sx={{ width: '100%', mx: 'auto', my: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center'}} InputLabelProps={{ shrink: true }}/>
+    
+    <TextField name="password" label="Senha"
+      type={showPassword ? 'text' : 'password'}
+      InputProps={{
+        endAdornment: (
+          <InputAdornment position="end">
+            <IconButton onClick={() => setShowPassword(!showPassword)} edge="end">
+              <Iconify icon={showPassword ? 'eva:eye-fill' : 'eva:eye-off-fill'} />
+            </IconButton>
+          </InputAdornment>
+        ),
+      }}
+      sx={{ width: '100%', mx: 'auto', my: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center',}}/>
 
-      <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ my: 2 }}>
-        {/* <Checkbox name="remember" label="Remember me" type= "Salvar senha"/> */}
-        <Link variant="subtitle2" underline="hover">
-          Esqueceu a senha?
-        </Link>
-      </Stack>
+  </Stack>
+      
+  <Button 
+  sx={{
+    width: '75%', 
+    bgcolor: 'gray', 
+    color: '#FFF', 
+    fontSize: '1.2rem',
+    '&:hover': {
+      bgcolor: 'darkgray',
+    },
+    display: 'flex', 
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 'auto', 
+    mt: 2
+  }}>
+  Entrar
+</Button>
 
-      <LoadingButton fullWidth size="large" type="submit" variant="contained" onClick={handleClick} color= "secondary" main= '#002F9C'
-      contrastText= '#002F9C'>
-        Entrar
-      </LoadingButton>
-      </Card>
-    </>
+
+  <Stack direction="row" alignItems="center" justifyContent="center" sx={{ my: 2, textAlign: 'center' }}>
+    <Link variant="subtitle2" underline="hover">
+      Esqueceu a senha? Clique aqui. <p />
+    <p /> Cadastre-se</Link>
+  </Stack>
+</Card> */}
+
+
+<Stack>
+  <img src="/assets/illustrations/setadireita.png" alt="setad" />
+    </Stack>
+    </> 
+
   );
+
 }
