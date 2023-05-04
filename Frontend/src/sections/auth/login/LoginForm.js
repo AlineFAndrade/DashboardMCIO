@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 // @mui
-import { Link, Stack, IconButton, InputAdornment, TextField, Checkbox, Typography, Card, Divider, Button, Grid, Paper } from '@mui/material';
+import { Link, Stack, IconButton, InputAdornment, TextField, Checkbox, Typography, Card, Divider, Button, Grid, Paper, useMediaQuery } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
 // components
 import Iconify from '../../../components/iconify';
+import useResponsive from '../../../hooks/useResponsive';
 
 
 // ----------------------------------------------------------------------
@@ -20,8 +21,11 @@ export default function LoginForm() {
  
   return (
     <>
-  <Grid container justify="center" sx={{ boxShadow: '0px 0px 10px 2px rgba(0,0,0,0.25)', justifyContent: 'center', alignItems: 'center',bgcolor: '#EAEAEA'}}>
-  <Grid item xs={12} sm={12} md={6}>
+    <section/>
+  <Grid container justify="right" sx={{position: '[500ms, 200ms]', left: '53.75%', right: '9.17%', top: '27.56%', bottom: '27.56%', boxShadow: '0px 0px 10px 2px rgba(0,0,0,0.25)', justifyContent: 'center', alignItems: 'center',bgcolor: '#EAEAEA'}}>
+  <Grid >
+  {/*  */}
+
   <div sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
     <Typography variant="h4" noWrap sx={{ textAlign: 'center', fontFamily: 'Inter, sans-serif' }}>
       Acesso ao Sistema<br/>
@@ -131,7 +135,7 @@ export default function LoginForm() {
   <img src="/assets/illustrations/setadireita.png" alt="setad" />
     </Stack>
     </> 
-
+    
   );
 
 }
