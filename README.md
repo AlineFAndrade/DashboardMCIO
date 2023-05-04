@@ -147,28 +147,40 @@ e CSS e empacotada de forma automatizada. Os objetivos de aprendizagem foram:
   
 :large_blue_diamond: Ariane
   
-  <a href="https://www.linkedin.com/in/ariane-sobreira-09a4a592" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
+<a href="https://www.linkedin.com/in/ariane-sobreira-09a4a592" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
   
   
 :large_blue_diamond: Dani
-    
+
+<a href="https://www.linkedin.com/in/danielle-sampaio-da-silva-a3863b37/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
+
 :large_blue_diamond: Fabi
   
+<a href="https://www.linkedin.com/in/fabisouzarn/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
+
 :large_blue_diamond: Iris  
   
+<a href="https://www.linkedin.com/in/irisjosiely/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
+
 :large_blue_diamond: Jessica
-  
+
+<a href="https://www.linkedin.com/in/jessica-olliveira" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
+
 :large_blue_diamond: Juliana
 
 <a href="https://www.linkedin.com/in/juliana-mignac/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
   
 :large_blue_diamond: Lisi
   
+<a href="https://www.linkedin.com/in/lisianefontoura/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
+
 :large_blue_diamond: Luciene
 
 <a href="https://www.linkedin.com/in/lucienerodriguesdasilva/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
   
 :large_blue_diamond: Nayara
+
+<a href="https://www.linkedin.com/in/nayara-oliveira-792ab693/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue" alt="Linkedin" />
 
 
 

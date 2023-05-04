@@ -14,7 +14,7 @@ export default function LoginForm() {
 
   return (
     <>
-      <Grid container  sx={{ boxShadow: '0px 0px 10px 2px rgba(0,0,0,0.25)', justifyContent: 'center',  bgcolor: '#EAEAEA' }}>
+      <Grid container sx={{ boxShadow: '0px 0px 10px 2px rgba(0,0,0,0.25)', justifyContent: 'center', bgcolor: '#EAEAEA' }}>
         <Grid >
           <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Typography variant="h4" noWrap sx={{ textAlign: 'center', fontFamily: 'Inter, sans-serif', padding: '2rem' }}>
@@ -34,7 +34,10 @@ export default function LoginForm() {
             autoFocus
             sx={{ bgcolor: '#FFFFFF' }}
           /><br />
-          <TextField name="password" label="Senha"
+          <TextField
+            name="password"
+            label="Senha"
+            variant="outlined"
             type={showPassword ? 'text' : 'password'}
             InputProps={{
               endAdornment: (
@@ -45,7 +48,7 @@ export default function LoginForm() {
                 </InputAdornment>
               ),
             }}
-            sx={{ width: '100%', mx: 'auto', my: 'auto', display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: '#FFFFFF' }} />
+            sx={{ width: '100%', bgcolor: '#FFFFFF' }} />
           <br />
           <Button type="submit" fullWidth variant="contained" onClick={handleClick} sx={{ bgcolor: '#666666', color: '#FFFFFF' }}>
             Enviar
